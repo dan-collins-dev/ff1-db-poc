@@ -1,44 +1,44 @@
 "use strict";
-import Database from "better-sqlite3";
+import { createDatabase, db} from "./utils/dbUtils.js"
 import express from "express";
 import * as path from "path";
 const port = 7340;
 
-const db = new Database("./data/ff1.db");
+// const db = new Database("./data/ff1.db");
 
-const query = `
-    CREATE TABLE bestiary(
-        id INTEGER PRIMARY KEY,
-        name TEXT NOT NULL UNIQUE,
-        hp INTEGER NOT NULL,
-        gil_drop INTEGER NOT NULL,
-        exp_drop INTEGER NOT NULL
-    )
-`;
+// const query = `
+//     CREATE TABLE bestiary(
+//         id INTEGER PRIMARY KEY,
+//         name TEXT NOT NULL UNIQUE,
+//         hp INTEGER NOT NULL,
+//         gil_drop INTEGER NOT NULL,
+//         exp_drop INTEGER NOT NULL
+//     )
+// `;
 
-// used for creating tables
-db.exec(query);
+// // used for creating tables
+// db.exec(query);
 
-const data = [
-    { name: "Goblin", hp: 8, gil_drop: 6, exp_drop: 6 },
-    { name: "Goblin Guard", hp: 16, gil_drop: 18, exp_drop: 18 },
-    { name: "Wolf", hp: 20, gil_drop: 6, exp_drop: 24 },
-    { name: "Crazy Horse", hp: 20, gil_drop: 6, exp_drop: 24 },
-];
+// const data = [
+//     { name: "Goblin", hp: 8, gil_drop: 6, exp_drop: 6 },
+//     { name: "Goblin Guard", hp: 16, gil_drop: 18, exp_drop: 18 },
+//     { name: "Wolf", hp: 20, gil_drop: 6, exp_drop: 24 },
+//     { name: "Crazy Horse", hp: 20, gil_drop: 6, exp_drop: 24 },
+// ];
 
-const insertData = db.prepare(
-    "INSERT INTO bestiary (name, hp, gil_drop, exp_drop) VALUES (?, ?, ?, ?)"
-);
+// const insertData = db.prepare(
+//     "INSERT INTO bestiary (name, hp, gil_drop, exp_drop) VALUES (?, ?, ?, ?)"
+// );
 
-// run() is used when you don't need a return result (usually inserts)
-data.forEach((monster) => {
-    insertData.run(
-        monster.name,
-        monster.hp,
-        monster.gil_drop,
-        monster.exp_drop
-    );
-});
+// // run() is used when you don't need a return result (usually inserts)
+// data.forEach((monster) => {
+//     insertData.run(
+//         monster.name,
+//         monster.hp,
+//         monster.gil_drop,
+//         monster.exp_drop
+//     );
+// });
 
 // // const query = "SELECT * FROM bestiary";
 // // const monsters = db.prepare(query).all();
@@ -50,6 +50,8 @@ data.forEach((monster) => {
 // console.log(monster);
 
 // db.close()
+
+createDatabase()
 
 const app = express();
 
