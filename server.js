@@ -1,10 +1,10 @@
 "use strict";
-import { createDatabase, getAllEntries} from "./utils/dbUtils.js"
+// import { getAllItems, getAllMonsters } from "./utils/dbUtils.js";
 import express from "express";
 import * as path from "path";
-const port = 7340;
+import monsterRouter from "./routes/monsters.js";
 
-// createDatabase()
+const port = 7340;
 
 const app = express();
 
@@ -15,8 +15,10 @@ app.use("/", express.static(path.join(import.meta.dirname, "./public")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/api/v1/monster", (req, res) => {
-    getAllEntries(res)
+app.use("/api/v1/monster", monsterRouter);
+
+app.get("/api/v1/item", (req, res) => {
+    getAllItems(res);
 });
 
 // Serves the whole app
