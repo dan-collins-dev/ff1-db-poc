@@ -1,57 +1,10 @@
 "use strict";
-import { createDatabase, db} from "./utils/dbUtils.js"
+import { createDatabase, getAllEntries} from "./utils/dbUtils.js"
 import express from "express";
 import * as path from "path";
 const port = 7340;
 
-// const db = new Database("./data/ff1.db");
-
-// const query = `
-//     CREATE TABLE bestiary(
-//         id INTEGER PRIMARY KEY,
-//         name TEXT NOT NULL UNIQUE,
-//         hp INTEGER NOT NULL,
-//         gil_drop INTEGER NOT NULL,
-//         exp_drop INTEGER NOT NULL
-//     )
-// `;
-
-// // used for creating tables
-// db.exec(query);
-
-// const data = [
-//     { name: "Goblin", hp: 8, gil_drop: 6, exp_drop: 6 },
-//     { name: "Goblin Guard", hp: 16, gil_drop: 18, exp_drop: 18 },
-//     { name: "Wolf", hp: 20, gil_drop: 6, exp_drop: 24 },
-//     { name: "Crazy Horse", hp: 20, gil_drop: 6, exp_drop: 24 },
-// ];
-
-// const insertData = db.prepare(
-//     "INSERT INTO bestiary (name, hp, gil_drop, exp_drop) VALUES (?, ?, ?, ?)"
-// );
-
-// // run() is used when you don't need a return result (usually inserts)
-// data.forEach((monster) => {
-//     insertData.run(
-//         monster.name,
-//         monster.hp,
-//         monster.gil_drop,
-//         monster.exp_drop
-//     );
-// });
-
-// // const query = "SELECT * FROM bestiary";
-// // const monsters = db.prepare(query).all();
-// // console.log(monsters);
-
-// db.prepare is used to prevent sql injection. Pass in query string where values
-// are added at a later time
-// const monster = db.prepare("SELECT * FROM bestiary WHERE id = ?").get(1);
-// console.log(monster);
-
-// db.close()
-
-createDatabase()
+// createDatabase()
 
 const app = express();
 
@@ -62,13 +15,8 @@ app.use("/", express.static(path.join(import.meta.dirname, "./public")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/api/v1/bestiary", (req, res) => {
-    const query = "SELECT * FROM bestiary";
-    const monsters = db.prepare(query).all();
-    res.status(200).json({
-        status: 200,
-        data: monsters,
-    });
+app.get("/api/v1/monster", (req, res) => {
+    getAllEntries(res)
 });
 
 // Serves the whole app
