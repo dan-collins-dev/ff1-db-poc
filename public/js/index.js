@@ -2,6 +2,7 @@
 const el = {
     tableBody: document.getElementById("table__body"),
     fBtn: document.getElementById("fetch-all"),
+    
 };
 
 const getAllMonsters = async () => {
@@ -22,12 +23,19 @@ el.fBtn.addEventListener(
 );
 
 const createRow = (data) => {
-    const { id, name, hp, gil_drop, exp_drop } = data;
+    const { id, name, hp, attack, defense, accuracy, agility, intellect, evasion, magic_defense, gil_drop, exp_drop } = data;
     const htmlString = `
     <tr>
         <th>${id}</th>
         <td>${name}</td>
         <td>${hp}</td>
+        <td>${attack}</td>
+        <td>${defense}</td>
+        <td>${accuracy}</td>
+        <td>${agility}</td>
+        <td>${intellect}</td>
+        <td>${evasion}</td>
+        <td>${magic_defense}</td>
         <td>${gil_drop}</td>
         <td>${exp_drop}</td>
     </tr>

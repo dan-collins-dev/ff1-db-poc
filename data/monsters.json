@@ -1,1793 +1,1793 @@
 [
     {
         "name": "Goblin",
-        "HP": "8",
+        "hp": "8",
         "attack": "4",
         "defense": "4",
         "accuracy": "2",
         "agility": "3",
         "intellect": "1",
         "evasion": "6",
-        "magicDefense": "16",
-        "gil": "6",
-        "exp": "6"
+        "magic_defense": "16",
+        "gil_drop": "6",
+        "exp_drop": "6"
     },
 
     {
         "name": "Goblin Guard",
-        "HP": "16",
+        "hp": "16",
         "attack": "8",
         "defense": "8",
         "accuracy": "4",
         "agility": "5",
         "intellect": "3",
         "evasion": "9",
-        "magicDefense": "23",
-        "gil": "18",
-        "exp": "18"
+        "magic_defense": "23",
+        "gil_drop": "18",
+        "exp_drop": "18"
     },
 
     {
         "name": "Wolf",
-        "HP": "20",
+        "hp": "20",
         "attack": "8",
         "defense": "0",
         "accuracy": "5",
         "agility": "18",
         "intellect": "1",
         "evasion": "36",
-        "magicDefense": "28",
-        "gil": "6",
-        "exp": "24"
+        "magic_defense": "28",
+        "gil_drop": "6",
+        "exp_drop": "24"
     },
 
     {
         "name": "Crazy Horse",
-        "HP": "64",
+        "hp": "64",
         "attack": "10",
         "defense": "2",
         "accuracy": "16",
         "agility": "11",
         "intellect": "4",
         "evasion": "22",
-        "magicDefense": "40",
-        "gil": "15",
-        "exp": "63"
+        "magic_defense": "40",
+        "gil_drop": "15",
+        "exp_drop": "63"
     },
 
     {
         "name": "Skeleton",
-        "HP": "10",
+        "hp": "10",
         "attack": "10",
         "defense": "0",
         "accuracy": "2",
         "agility": "6",
         "intellect": "0",
         "evasion": "12",
-        "magicDefense": "17",
-        "gil": "3",
-        "exp": "9"
+        "magic_defense": "17",
+        "gil_drop": "3",
+        "exp_drop": "9"
     },
 
     {
         "name": "Black Widow",
-        "HP": "28",
+        "hp": "28",
         "attack": "10",
         "defense": "0",
         "accuracy": "7",
         "agility": "15",
         "intellect": "10",
         "evasion": "30",
-        "magicDefense": "28",
-        "gil": "8",
-        "exp": "30"
+        "magic_defense": "28",
+        "gil_drop": "8",
+        "exp_drop": "30"
     },
 
     {
         "name": "Gigas Worm",
-        "HP": "56",
+        "hp": "56",
         "attack": "17",
         "defense": "8",
         "accuracy": "14",
         "agility": "12",
         "intellect": "9",
         "evasion": "24",
-        "magicDefense": "40",
-        "gil": "15",
-        "exp": "63"
+        "magic_defense": "40",
+        "gil_drop": "15",
+        "exp_drop": "63"
     },
 
     {
         "name": "Warg Wolf",
-        "HP": "72",
+        "hp": "72",
         "attack": "14",
         "defense": "0",
         "accuracy": "18",
         "agility": "27",
         "intellect": "3",
         "evasion": "54",
-        "magicDefense": "46",
-        "gil": "22",
-        "exp": "93"
+        "magic_defense": "46",
+        "gil_drop": "22",
+        "exp_drop": "93"
     },
 
     {
         "name": "Werewolf",
-        "HP": "68",
+        "hp": "68",
         "attack": "14",
         "defense": "6",
         "accuracy": "17",
         "agility": "21",
         "intellect": "8",
         "evasion": "42",
-        "magicDefense": "45",
-        "gil": "67",
-        "exp": "135"
+        "magic_defense": "45",
+        "gil_drop": "67",
+        "exp_drop": "135"
     },
     
     {
         "name": "Zombie",
-        "HP": "20",
+        "hp": "20",
         "attack": "10",
         "defense": "0",
         "accuracy": "5",
         "agility": "3",
         "intellect": "0",
         "evasion": "6",
-        "magicDefense": "25",
-        "gil": "12",
-        "exp": "24"
+        "magic_defense": "25",
+        "gil_drop": "12",
+        "exp_drop": "24"
     },
 
     {
         "name": "Ghoul",
-        "HP": "48",
+        "hp": "48",
         "attack": "8",
         "defense": "6",
         "accuracy": "12",
         "agility": "6",
         "intellect": "1",
         "evasion": "12",
-        "magicDefense": "36",
-        "gil": "50",
-        "exp": "93"
+        "magic_defense": "36",
+        "gil_drop": "50",
+        "exp_drop": "93"
     },
 
     {
         "name": "Garland",
-        "HP": "212",
+        "hp": "212",
         "attack": "15",
         "defense": "8",
         "accuracy": "27",
         "agility": "6",
         "intellect": "12",
         "evasion": "12",
-        "magicDefense": "64",
-        "gil": "250",
-        "exp": "130"
+        "magic_defense": "64",
+        "gil_drop": "250",
+        "exp_drop": "130"
     },
 
     {
         "name": "Cobra",
-        "HP": "56",
+        "hp": "56",
         "attack": "6",
         "defense": "6",
         "accuracy": "14",
         "agility": "15",
         "intellect": "6",
         "evasion": "30",
-        "magicDefense": "46",
-        "gil": "50",
-        "exp": "123"
+        "magic_defense": "46",
+        "gil_drop": "50",
+        "exp_drop": "123"
     },
 
     {
         "name": "Ogre",
-        "HP": "100",
+        "hp": "100",
         "attack": "18",
         "defense": "10",
         "accuracy": "25",
         "agility": "9",
         "intellect": "4",
         "evasion": "18",
-        "magicDefense": "65",
-        "gil": "195",
-        "exp": "195"
+        "magic_defense": "65",
+        "gil_drop": "195",
+        "exp_drop": "195"
     },
 
     {
         "name": "Ogre Chief",
-        "HP": "132",
+        "hp": "132",
         "attack": "23",
         "defense": "14",
         "accuracy": "33",
         "agility": "15",
         "intellect": "6",
         "evasion": "30",
-        "magicDefense": "71",
-        "gil": "300",
-        "exp": "282"
+        "magic_defense": "71",
+        "gil_drop": "300",
+        "exp_drop": "282"
     },
 
     {
         "name": "Lizard",
-        "HP": "92",
+        "hp": "92",
         "attack": "18",
         "defense": "12",
         "accuracy": "23",
         "agility": "12",
         "intellect": "3",
         "evasion": "24",
-        "magicDefense": "55",
-        "gil": "50",
-        "exp": "153"
+        "magic_defense": "55",
+        "gil_drop": "50",
+        "exp_drop": "153"
     },
 
     {
         "name": "Pirate",
-        "HP": "24",
+        "hp": "24",
         "attack": "10",
         "defense": "0",
         "accuracy": "2",
         "agility": "6",
         "intellect": "3",
         "evasion": "12",
-        "magicDefense": "35",
-        "gil": "3",
-        "exp": "9"
+        "magic_defense": "35",
+        "gil_drop": "3",
+        "exp_drop": "9"
     },
 
     {
         "name": "Sahagin",
-        "HP": "28",
+        "hp": "28",
         "attack": "10",
         "defense": "4",
         "accuracy": "7",
         "agility": "36",
         "intellect": "4",
         "evasion": "72",
-        "magicDefense": "28",
-        "gil": "30",
-        "exp": "30"
+        "magic_defense": "28",
+        "gil_drop": "30",
+        "exp_drop": "30"
     },
 
     {
         "name": "Sahagin Chief",
-        "HP": "64",
+        "hp": "64",
         "attack": "15",
         "defense": "8",
         "accuracy": "16",
         "agility": "39",
         "intellect": "7",
         "evasion": "78",
-        "magicDefense": "46",
-        "gil": "105",
-        "exp": "105"
+        "magic_defense": "46",
+        "gil_drop": "105",
+        "exp_drop": "105"
     },
 
     {
         "name": "Buccaneer",
-        "HP": "50",
+        "hp": "50",
         "attack": "14",
         "defense": "6",
         "accuracy": "13",
         "agility": "12",
         "intellect": "6",
         "evasion": "24",
-        "magicDefense": "37",
-        "gil": "120",
-        "exp": "60"
+        "magic_defense": "37",
+        "gil_drop": "120",
+        "exp_drop": "60"
     },
 
     {
         "name": "Shark",
-        "HP": "120",
+        "hp": "120",
         "attack": "22",
         "defense": "0",
         "accuracy": "30",
         "agility": "36",
         "intellect": "8",
         "evasion": "72",
-        "magicDefense": "70",
-        "gil": "66",
-        "exp": "267"
+        "magic_defense": "70",
+        "gil_drop": "66",
+        "exp_drop": "267"
     },
 
     {
         "name": "Bigeyes",
-        "HP": "10",
+        "hp": "10",
         "attack": "4",
         "defense": "0",
         "accuracy": "2",
         "agility": "42",
         "intellect": "6",
         "evasion": "84",
-        "magicDefense": "14",
-        "gil": "10",
-        "exp": "42"
+        "magic_defense": "14",
+        "gil_drop": "10",
+        "exp_drop": "42"
     },
 
     {
         "name": "Tarantula",
-        "HP": "64",
+        "hp": "64",
         "attack": "5",
         "defense": "12",
         "accuracy": "16",
         "agility": "12",
         "intellect": "3",
         "evasion": "24",
-        "magicDefense": "46",
-        "gil": "50",
-        "exp": "141"
+        "magic_defense": "46",
+        "gil_drop": "50",
+        "exp_drop": "141"
     },
 
     {
         "name": "Ghast",
-        "HP": "56",
+        "hp": "56",
         "attack": "8",
         "defense": "10",
         "accuracy": "14",
         "agility": "23",
         "intellect": "2",
         "evasion": "46",
-        "magicDefense": "40",
-        "gil": "117",
-        "exp": "117"
+        "magic_defense": "40",
+        "gil_drop": "117",
+        "exp_drop": "117"
     },
 
     {
         "name": "Scorpion",
-        "HP": "84",
+        "hp": "84",
         "attack": "22",
         "defense": "10",
         "accuracy": "21",
         "agility": "27",
         "intellect": "6",
         "evasion": "54",
-        "magicDefense": "55",
-        "gil": "70",
-        "exp": "225"
+        "magic_defense": "55",
+        "gil_drop": "70",
+        "exp_drop": "225"
     },
 
     {
         "name": "Shadow",
-        "HP": "50",
+        "hp": "50",
         "attack": "10",
         "defense": "0",
         "accuracy": "13",
         "agility": "18",
         "intellect": "12",
         "evasion": "36",
-        "magicDefense": "37",
-        "gil": "45",
-        "exp": "90"
+        "magic_defense": "37",
+        "gil_drop": "45",
+        "exp_drop": "90"
     },
 
     {
         "name": "Green Slime",
-        "HP": "24",
+        "hp": "24",
         "attack": "1",
         "defense": "255",
         "accuracy": "1",
         "agility": "0",
         "intellect": "3",
         "evasion": "0",
-        "magicDefense": "36",
-        "gil": "20",
-        "exp": "84"
+        "magic_defense": "36",
+        "gil_drop": "20",
+        "exp_drop": "84"
     },
 
     {
         "name": "Crawler",
-        "HP": "84",
+        "hp": "84",
         "attack": "1",
         "defense": "8",
         "accuracy": "21",
         "agility": "21",
         "intellect": "5",
         "evasion": "42",
-        "magicDefense": "51",
-        "gil": "200",
-        "exp": "186"
+        "magic_defense": "51",
+        "gil_drop": "200",
+        "exp_drop": "186"
     },
 
     {
         "name": "Gray Ooze",
-        "HP": "76",
+        "hp": "76",
         "attack": "30",
         "defense": "7",
         "accuracy": "19",
         "agility": "2",
         "intellect": "0",
         "evasion": "4",
-        "magicDefense": "55",
-        "gil": "70",
-        "exp": "255"
+        "magic_defense": "55",
+        "gil_drop": "70",
+        "exp_drop": "255"
     },
 
     {
         "name": "Gargoyle",
-        "HP": "80",
+        "hp": "80",
         "attack": "12",
         "defense": "8",
         "accuracy": "20",
         "agility": "23",
         "intellect": "11",
         "evasion": "45",
-        "magicDefense": "53",
-        "gil": "80",
-        "exp": "132"
+        "magic_defense": "53",
+        "gil_drop": "80",
+        "exp_drop": "132"
     },
 
     {
         "name": "Bloodbones",
-        "HP": "144",
+        "hp": "144",
         "attack": "26",
         "defense": "12",
         "accuracy": "36",
         "agility": "21",
         "intellect": "6",
         "evasion": "42",
-        "magicDefense": "76",
-        "gil": "378",
-        "exp": "378"
+        "magic_defense": "76",
+        "gil_drop": "378",
+        "exp_drop": "378"
     },
 
     {
         "name": "Piscodemon",
-        "HP": "84",
+        "hp": "84",
         "attack": "30",
         "defense": "16",
         "accuracy": "21",
         "agility": "33",
         "intellect": "18",
         "evasion": "66",
-        "magicDefense": "98",
-        "gil": "300",
-        "exp": "276"
+        "magic_defense": "98",
+        "gil_drop": "300",
+        "exp_drop": "276"
     },
 
     {
         "name": "Astos",
-        "HP": "420",
+        "hp": "420",
         "attack": "30",
         "defense": "18",
         "accuracy": "42",
         "agility": "39",
         "intellect": "24",
         "evasion": "78",
-        "magicDefense": "170",
-        "gil": "3",
-        "exp": "9"
+        "magic_defense": "170",
+        "gil_drop": "3",
+        "exp_drop": "9"
     },
 
     {
         "name": "Mummy",
-        "HP": "80",
+        "hp": "80",
         "attack": "30",
         "defense": "20",
         "accuracy": "20",
         "agility": "12",
         "intellect": "16",
         "evasion": "24",
-        "magicDefense": "60",
-        "gil": "300",
-        "exp": "300"
+        "magic_defense": "60",
+        "gil_drop": "300",
+        "exp_drop": "300"
     },
 
     {
         "name": "Wraith",
-        "HP": "86",
+        "hp": "86",
         "attack": "22",
         "defense": "4",
         "accuracy": "22",
         "agility": "45",
         "intellect": "18",
         "evasion": "90",
-        "magicDefense": "52",
-        "gil": "231",
-        "exp": "231"
+        "magic_defense": "52",
+        "gil_drop": "231",
+        "exp_drop": "231"
     },
 
     {
         "name": "Anaconda",
-        "HP": "80",
+        "hp": "80",
         "attack": "22",
         "defense": "10",
         "accuracy": "20",
         "agility": "18",
         "intellect": "11",
         "evasion": "36",
-        "magicDefense": "56",
-        "gil": "50",
-        "exp": "165"
+        "magic_defense": "56",
+        "gil_drop": "50",
+        "exp_drop": "165"
     },
 
     {
         "name": "Hyneadon",
-        "HP": "120",
+        "hp": "120",
         "attack": "22",
         "defense": "4",
         "accuracy": "30",
         "agility": "24",
         "intellect": "8",
         "evasion": "48",
-        "magicDefense": "76",
-        "gil": "72",
-        "exp": "288"
+        "magic_defense": "76",
+        "gil_drop": "72",
+        "exp_drop": "288"
     },
 
     {
         "name": "Lesser Tiger",
-        "HP": "132",
+        "hp": "132",
         "attack": "22",
         "defense": "8",
         "accuracy": "33",
         "agility": "24",
         "intellect": "13",
         "evasion": "48",
-        "magicDefense": "85",
-        "gil": "108",
-        "exp": "438"
+        "magic_defense": "85",
+        "gil_drop": "108",
+        "exp_drop": "438"
     },
 
     {
         "name": "Minotaur",
-        "HP": "164",
+        "hp": "164",
         "attack": "22",
         "defense": "4",
         "accuracy": "41",
         "agility": "24",
         "intellect": "8",
         "evasion": "48",
-        "magicDefense": "95",
-        "gil": "489",
-        "exp": "489"
+        "magic_defense": "95",
+        "gil_drop": "489",
+        "exp_drop": "489"
     },
 
     {
         "name": "Hill Gigas",
-        "HP": "240",
+        "hp": "240",
         "attack": "38",
         "defense": "12",
         "accuracy": "60",
         "agility": "24",
         "intellect": "5",
         "evasion": "48",
-        "magicDefense": "120",
-        "gil": "879",
-        "exp": "879"
+        "magic_defense": "120",
+        "gil_drop": "879",
+        "exp_drop": "879"
     },
 
     {
         "name": "Earth Elemental",
-        "HP": "288",
+        "hp": "288",
         "attack": "66",
         "defense": "20",
         "accuracy": "72",
         "agility": "9",
         "intellect": "18",
         "evasion": "18",
-        "magicDefense": "130",
-        "gil": "768",
-        "exp": "1536"
+        "magic_defense": "130",
+        "gil_drop": "768",
+        "exp_drop": "1536"
     },
 
     {
         "name": "Troll",
-        "HP": "184",
+        "hp": "184",
         "attack": "24",
         "defense": "12",
         "accuracy": "46",
         "agility": "24",
         "intellect": "6",
         "evasion": "48",
-        "magicDefense": "100",
-        "gil": "621",
-        "exp": "621"
+        "magic_defense": "100",
+        "gil_drop": "621",
+        "exp_drop": "621"
     },
 
     {
         "name": "Wight",
-        "HP": "52",
+        "hp": "52",
         "attack": "20",
         "defense": "12",
         "accuracy": "13",
         "agility": "21",
         "intellect": "3",
         "evasion": "42",
-        "magicDefense": "45",
-        "gil": "150",
-        "exp": "150"
+        "magic_defense": "45",
+        "gil_drop": "150",
+        "exp_drop": "150"
     },
 
     {
         "name": "Ochre Jelly",
-        "HP": "76",
+        "hp": "76",
         "attack": "32",
         "defense": "6",
         "accuracy": "19",
         "agility": "3",
         "intellect": "3",
         "evasion": "6",
-        "magicDefense": "55",
-        "gil": "70",
-        "exp": "252"
+        "magic_defense": "55",
+        "gil_drop": "70",
+        "exp_drop": "252"
     },
 
     {
         "name": "Cockatrice",
-        "HP": "50",
+        "hp": "50",
         "attack": "1",
         "defense": "4",
         "accuracy": "10",
         "agility": "36",
         "intellect": "8",
         "evasion": "72",
-        "magicDefense": "47",
-        "gil": "200",
-        "exp": "186"
+        "magic_defense": "47",
+        "gil_drop": "200",
+        "exp_drop": "186"
     },
 
     {
         "name": "Vampire",
-        "HP": "280",
+        "hp": "280",
         "attack": "76",
         "defense": "26",
         "accuracy": "39",
         "agility": "36",
         "intellect": "26",
         "evasion": "72",
-        "magicDefense": "75",
-        "gil": "2000",
-        "exp": "1200"
+        "magic_defense": "75",
+        "gil_drop": "2000",
+        "exp_drop": "1200"
     },
 
     {
         "name": "Ogre Mage",
-        "HP": "144",
+        "hp": "144",
         "attack": "23",
         "defense": "10",
         "accuracy": "36",
         "agility": "27",
         "intellect": "12",
         "evasion": "54",
-        "magicDefense": "80",
-        "gil": "723",
-        "exp": "723"
+        "magic_defense": "80",
+        "gil_drop": "723",
+        "exp_drop": "723"
     },
 
     {
         "name": "Sphinx",
-        "HP": "228",
+        "hp": "228",
         "attack": "23",
         "defense": "12",
         "accuracy": "57",
         "agility": "60",
         "intellect": "32",
         "evasion": "120",
-        "magicDefense": "115",
-        "gil": "1160",
-        "exp": "1160"
+        "magic_defense": "115",
+        "gil_drop": "1160",
+        "exp_drop": "1160"
     },
 
     {
         "name": "Lich",
-        "HP": "1200",
+        "hp": "1200",
         "attack": "40",
         "defense": "40",
         "accuracy": "49",
         "agility": "12",
         "intellect": "30",
         "evasion": "24",
-        "magicDefense": "120",
-        "gil": "3000",
-        "exp": "2200"
+        "magic_defense": "120",
+        "gil_drop": "3000",
+        "exp_drop": "2200"
     },
 
     {
         "name": "Ankheg",
-        "HP": "222",
+        "hp": "222",
         "attack": "39",
         "defense": "20",
         "accuracy": "56",
         "agility": "24",
         "intellect": "10",
         "evasion": "48",
-        "magicDefense": "116",
-        "gil": "300",
-        "exp": "1194"
+        "magic_defense": "116",
+        "gil_drop": "300",
+        "exp_drop": "1194"
     },
 
     {
         "name": "Piranha",
-        "HP": "92",
+        "hp": "92",
         "attack": "22",
         "defense": "0",
         "accuracy": "23",
         "agility": "36",
         "intellect": "10",
         "evasion": "72",
-        "magicDefense": "68",
-        "gil": "20",
-        "exp": "240"
+        "magic_defense": "68",
+        "gil_drop": "20",
+        "exp_drop": "240"
     },
 
     {
         "name": "Red Piranha",
-        "HP": "172",
+        "hp": "172",
         "attack": "37",
         "defense": "20",
         "accuracy": "43",
         "agility": "36",
         "intellect": "13",
         "evasion": "72",
-        "magicDefense": "83",
-        "gil": "46",
-        "exp": "546"
+        "magic_defense": "83",
+        "gil_drop": "46",
+        "exp_drop": "546"
     },
 
     {
         "name": "Crocodile",
-        "HP": "184",
+        "hp": "184",
         "attack": "42",
         "defense": "16",
         "accuracy": "46",
         "agility": "24",
         "intellect": "9",
         "evasion": "48",
-        "magicDefense": "103",
-        "gil": "900",
-        "exp": "816"
+        "magic_defense": "103",
+        "gil_drop": "900",
+        "exp_drop": "816"
     },
 
     {
         "name": "White Croc",
-        "HP": "288",
+        "hp": "288",
         "attack": "56",
         "defense": "20",
         "accuracy": "72",
         "agility": "24",
         "intellect": "16",
         "evasion": "48",
-        "magicDefense": "143",
-        "gil": "2000",
-        "exp": "1890"
+        "magic_defense": "143",
+        "gil_drop": "2000",
+        "exp_drop": "1890"
     },
 
     {
         "name": "Ochu",
-        "HP": "208",
+        "hp": "208",
         "attack": "20",
         "defense": "24",
         "accuracy": "52",
         "agility": "12",
         "intellect": "18",
         "evasion": "24",
-        "magicDefense": "116",
-        "gil": "102",
-        "exp": "1224"
+        "magic_defense": "116",
+        "gil_drop": "102",
+        "exp_drop": "1224"
     },
 
     {
         "name": "Neochu",
-        "HP": "344",
+        "hp": "344",
         "attack": "35",
         "defense": "32",
         "accuracy": "86",
         "agility": "12",
         "intellect": "20",
         "evasion": "24",
-        "magicDefense": "170",
-        "gil": "500",
-        "exp": "3189"
+        "magic_defense": "170",
+        "gil_drop": "500",
+        "exp_drop": "3189"
     },
 
     {
         "name": "Hydra",
-        "HP": "212",
+        "hp": "212",
         "attack": "30",
         "defense": "14",
         "accuracy": "53",
         "agility": "18",
         "intellect": "14",
         "evasion": "36",
-        "magicDefense": "116",
-        "gil": "150",
-        "exp": "915"
+        "magic_defense": "116",
+        "gil_drop": "150",
+        "exp_drop": "915"
     },
 
     {
         "name": "Horned Devil",
-        "HP": "94",
+        "hp": "94",
         "attack": "10",
         "defense": "32",
         "accuracy": "24",
         "agility": "36",
         "intellect": "17",
         "evasion": "72",
-        "magicDefense": "127",
-        "gil": "387",
-        "exp": "387"
+        "magic_defense": "127",
+        "gil_drop": "387",
+        "exp_drop": "387"
     },
 
     {
         "name": "Pyrolisk",
-        "HP": "44",
+        "hp": "44",
         "attack": "20",
         "defense": "4",
         "accuracy": "11",
         "agility": "36",
         "intellect": "15",
         "evasion": "72",
-        "magicDefense": 45,
-        "gil": "500",
-        "exp": "423"
+        "magic_defense": 45,
+        "gil_drop": "500",
+        "exp_drop": "423"
     },
 
     {
         "name": "Fire Elemental",
-        "HP": "276",
+        "hp": "276",
         "attack": "50",
         "defense": "20",
         "accuracy": "21",
         "agility": "21",
         "intellect": "20",
         "evasion": "42",
-        "magicDefense": "130",
-        "gil": "800",
-        "exp": "1620"
+        "magic_defense": "130",
+        "gil_drop": "800",
+        "exp_drop": "1620"
     },
 
     {
         "name": "Fire Hydra",
-        "HP": "182",
+        "hp": "182",
         "attack": "20",
         "defense": "14",
         "accuracy": "46",
         "agility": "18",
         "intellect": "16",
         "evasion": "36",
-        "magicDefense": "130",
-        "gil": "400",
-        "exp": "1215"
+        "magic_defense": "130",
+        "gil_drop": "400",
+        "exp_drop": "1215"
     },
 
     {
         "name": "Lava Worm",
-        "HP": "280",
+        "hp": "280",
         "attack": "50",
         "defense": "31",
         "accuracy": "70",
         "agility": "2",
         "intellect": "12",
         "evasion": "4",
-        "magicDefense": "143",
-        "gil": "400",
-        "exp": "1671"
+        "magic_defense": "143",
+        "gil_drop": "400",
+        "exp_drop": "1671"
     },
 
     {
         "name": "Hell Hound",
-        "HP": "192",
+        "hp": "192",
         "attack": "30",
         "defense": "8",
         "accuracy": "48",
         "agility": "24",
         "intellect": "13",
         "evasion": "48",
-        "magicDefense": "103",
-        "gil": "600",
-        "exp": "1182"
+        "magic_defense": "103",
+        "gil_drop": "600",
+        "exp_drop": "1182"
     },
 
     {
         "name": "Fire Lizard",
-        "HP": "296",
+        "hp": "296",
         "attack": "31",
         "defense": "18",
         "accuracy": "74",
         "agility": "18",
         "intellect": "8",
         "evasion": "36",
-        "magicDefense": "143",
-        "gil": "1200",
-        "exp": "2472"
+        "magic_defense": "143",
+        "gil_drop": "1200",
+        "exp_drop": "2472"
     },
 
     {
         "name": "Fire Gigas",
-        "HP": "300",
+        "hp": "300",
         "attack": "73",
         "defense": "20",
         "accuracy": "83",
         "agility": "24",
         "intellect": "12",
         "evasion": "48",
-        "magicDefense": "135",
-        "gil": "1506",
-        "exp": "1506"
+        "magic_defense": "135",
+        "gil_drop": "1506",
+        "exp_drop": "1506"
     },
 
     {
         "name": "Red Dragon",
-        "HP": "248",
+        "hp": "248",
         "attack": "75",
         "defense": "30",
         "accuracy": "62",
         "agility": "48",
         "intellect": "20",
         "evasion": "96",
-        "magicDefense": "200",
-        "gil": "4000",
-        "exp": "2904"
+        "magic_defense": "200",
+        "gil_drop": "4000",
+        "exp_drop": "2904"
     },
 
     {
         "name": "Marilith",
-        "HP": "1440",
+        "hp": "1440",
         "attack": "40",
         "defense": "50",
         "accuracy": "63",
         "agility": "24",
         "intellect": "32",
         "evasion": "48",
-        "magicDefense": "183",
-        "gil": "3000",
-        "exp": "2475"
+        "magic_defense": "183",
+        "gil_drop": "3000",
+        "exp_drop": "2475"
     },
 
     {
         "name": "White Dragon",
-        "HP": "200",
+        "hp": "200",
         "attack": "53",
         "defense": "8",
         "accuracy": "50",
         "agility": "60",
         "intellect": "25",
         "evasion": "120",
-        "magicDefense": "196",
-        "gil": "200",
-        "exp": "1701"
+        "magic_defense": "196",
+        "gil_drop": "200",
+        "exp_drop": "1701"
     },
 
     {
         "name": "Winter Wolf",
-        "HP": "92",
+        "hp": "92",
         "attack": "25",
         "defense": "0",
         "accuracy": "23",
         "agility": "27",
         "intellect": "12",
         "evasion": "54",
-        "magicDefense": "55",
-        "gil": "200",
-        "exp": "402"
+        "magic_defense": "55",
+        "gil_drop": "200",
+        "exp_drop": "402"
     },
 
     {
         "name": "Mindflayer",
-        "HP": "112",
+        "hp": "112",
         "attack": "1",
         "defense": "12",
         "accuracy": "28",
         "agility": "24",
         "intellect": "26",
         "evasion": "48",
-        "magicDefense": "187",
-        "gil": "999",
-        "exp": "822"
+        "magic_defense": "187",
+        "gil_drop": "999",
+        "exp_drop": "822"
     },
 
     {
         "name": "Ice Gigas",
-        "HP": "336",
+        "hp": "336",
         "attack": "60",
         "defense": "16",
         "accuracy": "78",
         "agility": "24",
         "intellect": "10",
         "evasion": "48",
-        "magicDefense": "150",
-        "gil": "1752",
-        "exp": "1752"
+        "magic_defense": "150",
+        "gil_drop": "1752",
+        "exp_drop": "1752"
     },
 
     {
         "name": "Specter",
-        "HP": "114",
+        "hp": "114",
         "attack": "40",
         "defense": "12",
         "accuracy": "29",
         "agility": "54",
         "intellect": "25",
         "evasion": "108",
-        "magicDefense": "67",
-        "gil": "432",
-        "exp": "432"
+        "magic_defense": "67",
+        "gil_drop": "432",
+        "exp_drop": "432"
     },
 
     {
         "name": "Remorazz",
-        "HP": "320",
+        "hp": "320",
         "attack": "73",
         "defense": "24",
         "accuracy": "80",
         "agility": "24",
         "intellect": "15",
         "evasion": "48",
-        "magicDefense": "185",
-        "gil": "1000",
-        "exp": "2244"
+        "magic_defense": "185",
+        "gil_drop": "1000",
+        "exp_drop": "2244"
     },
 
     {
         "name": "Dark Wizard",
-        "HP": "105",
+        "hp": "105",
         "attack": "26",
         "defense": "40",
         "accuracy": "27",
         "agility": "39",
         "intellect": "24",
         "evasion": "78",
-        "magicDefense": "170",
-        "gil": "1095",
-        "exp": "1095"
+        "magic_defense": "170",
+        "gil_drop": "1095",
+        "exp_drop": "1095"
     },
 
     {
         "name": "Evil Eye",
-        "HP": "162",
+        "hp": "162",
         "attack": "30",
         "defense": "30",
         "accuracy": "42",
         "agility": "6",
         "intellect": "20",
         "evasion": "12",
-        "magicDefense": "92",
-        "gil": "3225",
-        "exp": "3225"
+        "magic_defense": "92",
+        "gil_drop": "3225",
+        "exp_drop": "3225"
     },
 
     {
         "name": "Desert Baretta",
-        "HP": "352",
+        "hp": "352",
         "attack": "98",
         "defense": "48",
         "accuracy": "88",
         "agility": "24",
         "intellect": "12",
         "evasion": "48",
-        "magicDefense": "156",
-        "gil": "1",
-        "exp": "2610"
+        "magic_defense": "156",
+        "gil_drop": "1",
+        "exp_drop": "2610"
     },
 
     {
         "name": "Sabertooth",
-        "HP": "200",
+        "hp": "200",
         "attack": "24",
         "defense": "8",
         "accuracy": "50",
         "agility": "21",
         "intellect": "18",
         "evasion": "42",
-        "magicDefense": "106",
-        "gil": "500",
-        "exp": "843"
+        "magic_defense": "106",
+        "gil_drop": "500",
+        "exp_drop": "843"
     },
 
     {
         "name": "Wyvern",
-        "HP": "212",
+        "hp": "212",
         "attack": "30",
         "defense": "12",
         "accuracy": "53",
         "agility": "48",
         "intellect": "16",
         "evasion": "96",
-        "magicDefense": "115",
-        "gil": "50",
-        "exp": "1173"
+        "magic_defense": "115",
+        "gil_drop": "50",
+        "exp_drop": "1173"
     },
 
     {
         "name": "Wyrm",
-        "HP": "260",
+        "hp": "260",
         "attack": "40",
         "defense": "22",
         "accuracy": "65",
         "agility": "30",
         "intellect": "24",
         "evasion": "60",
-        "magicDefense": "131",
-        "gil": "502",
-        "exp": "1218"
+        "magic_defense": "131",
+        "gil_drop": "502",
+        "exp_drop": "1218"
     },
 
     {
         "name": "Manticore",
-        "HP": "164",
+        "hp": "164",
         "attack": "22",
         "defense": "8",
         "accuracy": "41",
         "agility": "36",
         "intellect": "8",
         "evasion": "72",
-        "magicDefense": "95",
-        "gil": "650",
-        "exp": "1317"
+        "magic_defense": "95",
+        "gil_drop": "650",
+        "exp_drop": "1317"
     },
     
     {
         "name": "Baretta",
-        "HP": "256",
+        "hp": "256",
         "attack": "60",
         "defense": "38",
         "accuracy": "64",
         "agility": "28",
         "intellect": "16",
         "evasion": "56",
-        "magicDefense": "130",
-        "gil": "300",
-        "exp": "1428"
+        "magic_defense": "130",
+        "gil_drop": "300",
+        "exp_drop": "1428"
     },
 
     {
         "name": "Basilisk",
-        "HP": "196",
+        "hp": "196",
         "attack": "30",
         "defense": "20",
         "accuracy": "54",
         "agility": "12",
         "intellect": "12",
         "evasion": "24",
-        "magicDefense": "91",
-        "gil": "658",
-        "exp": "1977"
+        "magic_defense": "91",
+        "gil_drop": "658",
+        "exp_drop": "1977"
     },
 
     {
         "name": "Allosaurus",
-        "HP": "480",
+        "hp": "480",
         "attack": "65",
         "defense": "10",
         "accuracy": "133",
         "agility": "30",
         "intellect": "10",
         "evasion": "60",
-        "magicDefense": "200",
-        "gil": "502",
-        "exp": "3387"
+        "magic_defense": "200",
+        "gil_drop": "502",
+        "exp_drop": "3387"
     },
 
     {
         "name": "Weretiger",
-        "HP": "160",
+        "hp": "160",
         "attack": "30",
         "defense": "16",
         "accuracy": "40",
         "agility": "24",
         "intellect": "8",
         "evasion": "48",
-        "magicDefense": "93",
-        "gil": "780",
-        "exp": "780"
+        "magic_defense": "93",
+        "gil_drop": "780",
+        "exp_drop": "780"
     },
 
     {
         "name": "Sand Worm",
-        "HP": "200",
+        "hp": "200",
         "attack": "46",
         "defense": "14",
         "accuracy": "50",
         "agility": "31",
         "intellect": "18",
         "evasion": "62",
-        "magicDefense": "103",
-        "gil": "900",
-        "exp": "2683"
+        "magic_defense": "103",
+        "gil_drop": "900",
+        "exp_drop": "2683"
     },
 
     {
         "name": "Minotaur Zombie",
-        "HP": "224",
+        "hp": "224",
         "attack": "40",
         "defense": "14",
         "accuracy": "56",
         "agility": "18",
         "intellect": "1",
         "evasion": "36",
-        "magicDefense": "116",
-        "gil": "1050",
-        "exp": "1050"
+        "magic_defense": "116",
+        "gil_drop": "1050",
+        "exp_drop": "1050"
     },
 
     {
         "name": "King Mummy",
-        "HP": "188",
+        "hp": "188",
         "attack": "43",
         "defense": "24",
         "accuracy": "47",
         "agility": "12",
         "intellect": "24",
         "evasion": "24",
-        "magicDefense": "95",
-        "gil": "1000",
-        "exp": "984"
+        "magic_defense": "95",
+        "gil_drop": "1000",
+        "exp_drop": "984"
     },
 
     {
         "name": "Medusa",
-        "HP": "68",
+        "hp": "68",
         "attack": "20",
         "defense": "10",
         "accuracy": "17",
         "agility": "18",
         "intellect": "16",
         "evasion": "36",
-        "magicDefense": "55",
-        "gil": "699",
-        "exp": "699"
+        "magic_defense": "55",
+        "gil_drop": "699",
+        "exp_drop": "699"
     },
 
     {
         "name": "Rakshasa",
-        "HP": "110",
+        "hp": "110",
         "attack": "20",
         "defense": "30",
         "accuracy": "28",
         "agility": "30",
         "intellect": "15",
         "evasion": "60",
-        "magicDefense": "62",
-        "gil": "800",
-        "exp": "603"
+        "magic_defense": "62",
+        "gil_drop": "800",
+        "exp_drop": "603"
     },
 
     {
         "name": "Clay Golem",
-        "HP": "176",
+        "hp": "176",
         "attack": "64",
         "defense": "7",
         "accuracy": "44",
         "agility": "14",
         "intellect": "16",
         "evasion": "28",
-        "magicDefense": "93",
-        "gil": "800",
-        "exp": "1257"
+        "magic_defense": "93",
+        "gil_drop": "800",
+        "exp_drop": "1257"
     },
 
     {
         "name": "Nightmare",
-        "HP": "200",
+        "hp": "200",
         "attack": "30",
         "defense": "24",
         "accuracy": "50",
         "agility": "66",
         "intellect": "20",
         "evasion": "132",
-        "magicDefense": "100",
-        "gil": "700",
-        "exp": "1272"
+        "magic_defense": "100",
+        "gil_drop": "700",
+        "exp_drop": "1272"
     },
 
     {
         "name": "Dragon Zombie",
-        "HP": "268",
+        "hp": "268",
         "attack": "56",
         "defense": "30",
         "accuracy": "67",
         "agility": "12",
         "intellect": "26",
         "evasion": "24",
-        "magicDefense": "135",
-        "gil": "999",
-        "exp": "2331"
+        "magic_defense": "135",
+        "gil_drop": "999",
+        "exp_drop": "2331"
     },
 
     {
         "name": "Sahagin Prince",
-        "HP": "204",
+        "hp": "204",
         "attack": "47",
         "defense": "20",
         "accuracy": "51",
         "agility": "48",
         "intellect": "15",
         "evasion": "96",
-        "magicDefense": "101",
-        "gil": "882",
-        "exp": "882"
+        "magic_defense": "101",
+        "gil_drop": "882",
+        "exp_drop": "882"
     },
 
     {
         "name": "White Shark",
-        "HP": "344",
+        "hp": "344",
         "attack": "50",
         "defense": "8",
         "accuracy": "86",
         "agility": "36",
         "intellect": "16",
         "evasion": "72",
-        "magicDefense": "170",
-        "gil": "600",
-        "exp": "2361"
+        "magic_defense": "170",
+        "gil_drop": "600",
+        "exp_drop": "2361"
     },
 
     {
         "name": "Deepeyes",
-        "HP": "304",
+        "hp": "304",
         "attack": "30",
         "defense": "16",
         "accuracy": "76",
         "agility": "12",
         "intellect": "0",
         "evasion": "24",
-        "magicDefense": "156",
-        "gil": "3591",
-        "exp": "3591"
+        "magic_defense": "156",
+        "gil_drop": "3591",
+        "exp_drop": "3591"
     },
 
     {
         "name": "Sea Snake",
-        "HP": "224",
+        "hp": "224",
         "attack": "35",
         "defense": "12",
         "accuracy": "56",
         "agility": "24",
         "intellect": "21",
         "evasion": "48",
-        "magicDefense": "116",
-        "gil": "600",
-        "exp": "957"
+        "magic_defense": "116",
+        "gil_drop": "600",
+        "exp_drop": "957"
     },
 
     {
         "name": "Sea Scorpion",
-        "HP": "148",
+        "hp": "148",
         "attack": "35",
         "defense": "18",
         "accuracy": "37",
         "agility": "30",
         "intellect": "11",
         "evasion": "60",
-        "magicDefense": "85",
-        "gil": "300",
-        "exp": "639"
+        "magic_defense": "85",
+        "gil_drop": "300",
+        "exp_drop": "639"
     },
 
     {
         "name": "Sea Troll",
-        "HP": "216",
+        "hp": "216",
         "attack": "40",
         "defense": "20",
         "accuracy": "54",
         "agility": "24",
         "intellect": "10",
         "evasion": "48",
-        "magicDefense": "110",
-        "gil": "852",
-        "exp": "852"
+        "magic_defense": "110",
+        "gil_drop": "852",
+        "exp_drop": "852"
     },
 
     {
         "name": "Ghost",
-        "HP": "180",
+        "hp": "180",
         "attack": "93",
         "defense": "30",
         "accuracy": "45",
         "agility": "18",
         "intellect": "30",
         "evasion": "36",
-        "magicDefense": "85",
-        "gil": "990",
-        "exp": "990"
+        "magic_defense": "85",
+        "gil_drop": "990",
+        "exp_drop": "990"
     },
 
     {
         "name": "Water Elemental",
-        "HP": "300",
+        "hp": "300",
         "attack": "69",
         "defense": "20",
         "accuracy": "68",
         "agility": "36",
         "intellect": "32",
         "evasion": "72",
-        "magicDefense": "130",
-        "gil": "800",
-        "exp": "1962"
+        "magic_defense": "130",
+        "gil_drop": "800",
+        "exp_drop": "1962"
     },
 
     {
         "name": "Water Naga",
-        "HP": "356",
+        "hp": "356",
         "attack": "9",
         "defense": "8",
         "accuracy": "71",
         "agility": "36",
         "intellect": "25",
         "evasion": "72",
-        "magicDefense": "116",
-        "gil": "2355",
-        "exp": "2355"
+        "magic_defense": "116",
+        "gil_drop": "2355",
+        "exp_drop": "2355"
     },
 
     {
         "name": "Kraken",
-        "HP": "1800",
+        "hp": "1800",
         "attack": "50",
         "defense": "60",
         "accuracy": "90",
         "agility": "42",
         "intellect": "32",
         "evasion": "84",
-        "magicDefense": "160",
-        "gil": "5000",
-        "exp": "4245"
+        "magic_defense": "160",
+        "gil_drop": "5000",
+        "exp_drop": "4245"
     },
 
     {
         "name": "Tyrannosaur",
-        "HP": "600",
+        "hp": "600",
         "attack": "115",
         "defense": "10",
         "accuracy": "144",
         "agility": "30",
         "intellect": "24",
         "evasion": "60",
-        "magicDefense": "200",
-        "gil": "600",
-        "exp": "7200"
+        "magic_defense": "200",
+        "gil_drop": "600",
+        "exp_drop": "7200"
     },
 
     {
         "name": "Black Knight",
-        "HP": "260",
+        "hp": "260",
         "attack": "44",
         "defense": "38",
         "accuracy": "65",
         "agility": "18",
         "intellect": "20",
         "evasion": "36",
-        "magicDefense": "135",
-        "gil": "1800",
-        "exp": "1263"
+        "magic_defense": "135",
+        "gil_drop": "1800",
+        "exp_drop": "1263"
     },
 
     {
         "name": "Chimera",
-        "HP": "300",
+        "hp": "300",
         "attack": "30",
         "defense": "20",
         "accuracy": "60",
         "agility": "36",
         "intellect": "24",
         "evasion": "72",
-        "magicDefense": "130",
-        "gil": "2500",
-        "exp": "2064"
+        "magic_defense": "130",
+        "gil_drop": "2500",
+        "exp_drop": "2064"
     },
 
     {
         "name": "Guardian",
-        "HP": "200",
+        "hp": "200",
         "attack": "25",
         "defense": "40",
         "accuracy": "50",
         "agility": "36",
         "intellect": "24",
         "evasion": "72",
-        "magicDefense": "110",
-        "gil": "400",
-        "exp": "1224"
+        "magic_defense": "110",
+        "gil_drop": "400",
+        "exp_drop": "1224"
     },
 
     {
         "name": "Blue Dragon",
-        "HP": "454",
+        "hp": "454",
         "attack": "92",
         "defense": "20",
         "accuracy": "86",
         "agility": "48",
         "intellect": "28",
         "evasion": "96",
-        "magicDefense": "200",
-        "gil": "2000",
-        "exp": "3274"
+        "magic_defense": "200",
+        "gil_drop": "2000",
+        "exp_drop": "3274"
     },
 
     {
         "name": "Green Dragon",
-        "HP": "1352",
+        "hp": "1352",
         "attack": "72",
         "defense": "16",
         "accuracy": "68",
         "agility": "48",
         "intellect": "24",
         "evasion": "96",
-        "magicDefense": "200",
-        "gil": "5000",
-        "exp": "4068"
+        "magic_defense": "200",
+        "gil_drop": "5000",
+        "exp_drop": "4068"
     },
 
     {
         "name": "Stone Golem",
-        "HP": "200",
+        "hp": "200",
         "attack": "70",
         "defense": "16",
         "accuracy": "50",
         "agility": "12",
         "intellect": "21",
         "evasion": "24",
-        "magicDefense": "110",
-        "gil": "1000",
-        "exp": "2385"
+        "magic_defense": "110",
+        "gil_drop": "1000",
+        "exp_drop": "2385"
     },
 
     {
         "name": "Air Elemental",
-        "HP": "358",
+        "hp": "358",
         "attack": "53",
         "defense": "4",
         "accuracy": "62",
         "agility": "72",
         "intellect": "40",
         "evasion": "144",
-        "magicDefense": "130",
-        "gil": "807",
-        "exp": "1614"
+        "magic_defense": "130",
+        "gil_drop": "807",
+        "exp_drop": "1614"
     },
 
     {
         "name": "Spirit Naga",
-        "HP": "420",
+        "hp": "420",
         "attack": "7",
         "defense": "16",
         "accuracy": "88",
         "agility": "24",
         "intellect": "32",
         "evasion": "48",
-        "magicDefense": "143",
-        "gil": "4000",
-        "exp": "3489"
+        "magic_defense": "143",
+        "gil_drop": "4000",
+        "exp_drop": "3489"
     },
 
     {
         "name": "Death Knight",
-        "HP": "190",
+        "hp": "190",
         "attack": "55",
         "defense": "32",
         "accuracy": "48",
         "agility": "21",
         "intellect": "28",
         "evasion": "42",
-        "magicDefense": "173",
-        "gil": "3000",
-        "exp": "2700"
+        "magic_defense": "173",
+        "gil_drop": "3000",
+        "exp_drop": "2700"
     },
 
     {
         "name": "Earth Medusa",
-        "HP": "96",
+        "hp": "96",
         "attack": "11",
         "defense": "12",
         "accuracy": "24",
         "agility": "36",
         "intellect": "24",
         "evasion": "72",
-        "magicDefense": "70",
-        "gil": "1218",
-        "exp": "1218"
+        "magic_defense": "70",
+        "gil_drop": "1218",
+        "exp_drop": "1218"
     },
 
     {
         "name": "Black Flan",
-        "HP": "156",
+        "hp": "156",
         "attack": "49",
         "defense": "255",
         "accuracy": "39",
         "agility": "12",
         "intellect": "6",
         "evasion": "24",
-        "magicDefense": "85",
-        "gil": "900",
-        "exp": "1101"
+        "magic_defense": "85",
+        "gil_drop": "900",
+        "exp_drop": "1101"
     },
 
     {
         "name": "Soldier",
-        "HP": "400",
+        "hp": "400",
         "attack": "102",
         "defense": "48",
         "accuracy": "90",
         "agility": "48",
         "intellect": "28",
         "evasion": "96",
-        "magicDefense": "160",
-        "gil": "2000",
-        "exp": "4000"
+        "magic_defense": "160",
+        "gil_drop": "2000",
+        "exp_drop": "4000"
     },
 
     {
         "name": "Vampire Lord",
-        "HP": "300",
+        "hp": "300",
         "attack": "90",
         "defense": "28",
         "accuracy": "42",
         "agility": "36",
         "intellect": "34",
         "evasion": "72",
-        "magicDefense": "84",
-        "gil": "3000",
-        "exp": "2385"
+        "magic_defense": "84",
+        "gil_drop": "3000",
+        "exp_drop": "2385"
     },
 
     {
         "name": "Dark Fighter",
-        "HP": "200",
+        "hp": "200",
         "attack": "40",
         "defense": "38",
         "accuracy": "45",
         "agility": "45",
         "intellect": "34",
         "evasion": "90",
-        "magicDefense": "186",
-        "gil": "3420",
-        "exp": "3420"
+        "magic_defense": "186",
+        "gil_drop": "3420",
+        "exp_drop": "3420"
     },
 
     {
         "name": "Warmech",
-        "HP": "2000",
+        "hp": "2000",
         "attack": "128",
         "defense": "80",
         "accuracy": "200",
         "agility": "48",
         "intellect": "50",
         "evasion": "96",
-        "magicDefense": "200",
-        "gil": "32000",
-        "exp": "32000"
+        "magic_defense": "200",
+        "gil_drop": "32000",
+        "exp_drop": "32000"
     },
 
     {
         "name": "Tiamat",
-        "HP": "2400",
+        "hp": "2400",
         "attack": "53",
         "defense": "80",
         "accuracy": "80",
         "agility": "36",
         "intellect": "45",
         "evasion": "72",
-        "magicDefense": "200",
-        "gil": "6000",
-        "exp": "5496"
+        "magic_defense": "200",
+        "gil_drop": "6000",
+        "exp_drop": "5496"
     },
 
     {
         "name": "Rhyos",
-        "HP": "350",
+        "hp": "350",
         "attack": "40",
         "defense": "18",
         "accuracy": "70",
         "agility": "30",
         "intellect": "30",
         "evasion": "60",
-        "magicDefense": "143",
-        "gil": "5000",
-        "exp": "4584"
+        "magic_defense": "143",
+        "gil_drop": "5000",
+        "exp_drop": "4584"
     },
 
     {
         "name": "Death Eye",
-        "HP": "360",
+        "hp": "360",
         "attack": "120",
         "defense": "60",
         "accuracy": "150",
         "agility": "12",
         "intellect": "35",
         "evasion": "24",
-        "magicDefense": "160",
-        "gil": "1",
-        "exp": "1"
+        "magic_defense": "160",
+        "gil_drop": "1",
+        "exp_drop": "1"
     },
 
     {
         "name": "Purple Worm",
-        "HP": "448",
+        "hp": "448",
         "attack": "65",
         "defense": "10",
         "accuracy": "112",
         "agility": "18",
         "intellect": "24",
         "evasion": "36",
-        "magicDefense": "200",
-        "gil": "1000",
-        "exp": "4333"
+        "magic_defense": "200",
+        "gil_drop": "1000",
+        "exp_drop": "4333"
     },
 
     {
         "name": "Iron Golem",
-        "HP": "304",
+        "hp": "304",
         "attack": "93",
         "defense": "100",
         "accuracy": "76",
         "agility": "12",
         "intellect": "26",
         "evasion": "24",
-        "magicDefense": "143",
-        "gil": "3000",
-        "exp": "6717"
+        "magic_defense": "143",
+        "gil_drop": "3000",
+        "exp_drop": "6717"
     },
 
     {
         "name": "Lich",
-        "HP": "2800",
+        "hp": "2800",
         "attack": "50",
         "defense": "80",
         "accuracy": "64",
         "agility": "24",
         "intellect": "34",
         "evasion": "48",
-        "magicDefense": "140",
-        "gil": "1",
-        "exp": "2000"
+        "magic_defense": "140",
+        "gil_drop": "1",
+        "exp_drop": "2000"
     },
 
     {
         "name": "Marilith",
-        "HP": "3200",
+        "hp": "3200",
         "attack": "60",
         "defense": "80",
         "accuracy": "63",
         "agility": "30",
         "intellect": "41",
         "evasion": "60",
-        "magicDefense": "183",
-        "gil": "1",
-        "exp": "2000"
+        "magic_defense": "183",
+        "gil_drop": "1",
+        "exp_drop": "2000"
     },
 
     {
         "name": "Kraken",
-        "HP": "3600",
+        "hp": "3600",
         "attack": "60",
         "defense": "80",
         "accuracy": "114",
         "agility": "49",
         "intellect": "41",
         "evasion": "98",
-        "magicDefense": "200",
-        "gil": "1",
-        "exp": "2000"
+        "magic_defense": "200",
+        "gil_drop": "1",
+        "exp_drop": "2000"
     },
 
     {
         "name": "Tiamat",
-        "HP": "5500",
+        "hp": "5500",
         "attack": "75",
         "defense": "90",
         "accuracy": "85",
         "agility": "45",
         "intellect": "38",
         "evasion": "90",
-        "magicDefense": "200",
-        "gil": "1",
-        "exp": "2000"
+        "magic_defense": "200",
+        "gil_drop": "1",
+        "exp_drop": "2000"
     },
 
     {
         "name": "Chaos",
-        "HP": "???",
+        "hp": "???",
         "attack": "???",
         "defense": "???",
         "accuracy": "???",
         "agility": "???",
         "intellect": "???",
         "evasion": "???",
-        "magicDefense": "???",
-        "gil": "???",
-        "exp": "???"
+        "magic_defense": "???",
+        "gil_drop": "???",
+        "exp_drop": "???"
     }
 ]
