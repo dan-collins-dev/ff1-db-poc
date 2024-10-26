@@ -9,13 +9,14 @@
     <body>
         <header>
             <h1>API w/ DB Proof of Concept</h1>
-            <button id="fetch-all">Gotta Fetch Em All</button>
+            
         </header>
         <main>
-            <section class="">
-                <table class="table">
-                    <thead>
-                        <tr>
+            <section class="monster">
+                <h2 class="monster-label">Monster Table</h2>
+                <table id="monster-table" class="table">
+                    <thead class="table-head">
+                        <tr class="table-head__row">
                             <th>ID</th>
                             <th>Name</th>
                             <th>HP</th>
@@ -27,6 +28,7 @@
                     <tbody id="table__body"></tbody>
                 </table>
             </section>
+            <button id="fetch-all">Gotta Fetch Em All</button>
         </main>
         <script src="./js/index.js"></script>
     </body>
