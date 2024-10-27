@@ -3,6 +3,7 @@ import express from "express";
 import {
     getAllMonsters,
     getMonsterById,
+    getMonsterLikeName
 } from "../controllers/monsterController.js";
 const monsterRouter = express.Router();
 
@@ -19,6 +20,15 @@ monsterRouter.get("/", (req, res, next) => {
                 next(err);
             }
         );
+    } else if (req.query.search) {
+        // Get monsterLike
+        console.log(req.query)
+        getMonsterLikeName(req.query.search, 
+            (data) => {
+            res.status(200).json({
+                data: data
+            })
+        }, (err) => {next(err)})
     } else {
         getAllMonsters(
             (data) => {

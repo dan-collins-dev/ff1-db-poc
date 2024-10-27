@@ -1,10 +1,9 @@
 "using strict";
 import Database from "better-sqlite3";
 import * as path from "path";
-import * as fs from "fs/promises"
-import { constants } from "buffer";
+import * as fs from "fs/promises";
 export let db;
-let loadedMonsterData = []
+let loadedMonsterData = [];
 
 const loadMonsterData = async () => {
     try {
@@ -14,44 +13,49 @@ const loadMonsterData = async () => {
         );
 
         const fileData = await fs.readFile(FILE_NAME);
-        return JSON.parse(fileData)
+        return JSON.parse(fileData);
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
 };
 
-const itemData = [
-    { name: "Potion", description: "Restores 50 HP." },
-    { name: "Hi-Potion", description: "Restores 150 HP." },
-    { name: "Ether", description: "Restores 1 MP for each magic level." },
-];
+const loadItemData = async () => {
+    try {
+        const FILE_NAME = path.join(import.meta.dirname, "../data/items.json");
+
+        const fileData = await fs.readFile(FILE_NAME);
+        return JSON.parse(fileData);
+    } catch (error) {
+        console.log(error);
+    }
+};
 
 const exists = async (filePath) => {
     try {
-      await fs.stat(filePath);
-      return true;
+        await fs.stat(filePath);
+        return true;
     } catch {
-      return false;
+        return false;
     }
-}
+};
 
 export const createDatabase = async () => {
     try {
-        let file = await exists("../data/ff1.db")
+        let file = await exists("../data/ff1.db");
         if (!file) {
             db = new Database("./data/ff1.db");
-            
+
             createMonsterTable();
-            loadMonsterData().then((data) => addMonsters(data)).catch((err) => console.log(err))
-            // addMonsters();
+            const monsterData = await loadMonsterData();
+            // console.log(monsterData);
+            addMonsters(monsterData);
 
             createItemTable();
-            addItems();
-        } else {
-            db = new Database("./data/ff1.db");
+            const itemData = await loadItemData();
+            addItems(itemData);
         }
     } catch (error) {
-        console.log("Something went wrong. Error", error.message);
+        console.log("DB and tables already exist.");
     }
 };
 
@@ -79,18 +83,19 @@ const createItemTable = () => {
     CREATE TABLE item(
     id INTEGER PRIMARY KEY,
     name TEXT NOT NULL UNIQUE,
-    description TEXT
+    description TEXT,
+    price INTEGER
     )`;
     db.exec(query);
 };
 
 const addMonsters = (data) => {
-    console.log("IS THERE DATA", data)
-    const dataToInsert = db.prepare(
+    // console.log("IS THERE DATA", data)
+    const insertStatement = db.prepare(
         "INSERT INTO monster (name, hp, attack, defense, accuracy, agility, intellect, evasion, magic_defense, gil_drop, exp_drop) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
     );
     data.forEach((monster) => {
-        dataToInsert.run(
+        insertStatement.run(
             monster.name,
             monster.hp,
             monster.attack,
@@ -106,21 +111,12 @@ const addMonsters = (data) => {
     });
 };
 
-const addItems = () => {
-    const dataToInsert = db.prepare(
-        "INSERT INTO item (name, description) VALUES (?, ?)"
+const addItems = (data) => {
+    const insertStatement = db.prepare(
+        "INSERT INTO item (name, description, price) VALUES (?, ?, ?)"
     );
-    itemData.forEach((item) => {
-        dataToInsert.run(item.name, item.description);
-    });
-};
-
-export const getAllMonsters = (res) => {
-    const query = "SELECT * FROM monster";
-    const monsters = db.prepare(query).all();
-
-    res.status(200).json({
-        data: monsters,
+    data.forEach((item) => {
+        insertStatement.run(item.name, item.description, item.price);
     });
 };
 

@@ -1,0 +1,73 @@
+[
+    {
+        "name": "Potion",
+        "description": "Restores 50 HP.",
+        "price": "40"
+    },
+
+    {
+        "name": "Hi-Potion",
+        "description": "Restores 150 HP.",
+        "price": "150"
+    },
+
+    {
+        "name": "Ether",
+        "description": "Restores 1 MP for each magic level.",
+        "price": "150"
+    },
+
+    {
+        "name": "Phoenix Down",
+        "description": "Revives on KO'd ally.",
+        "price": "500"
+    },
+
+    {
+        "name": "Antidote",
+        "description": "Cures poison.",
+        "price": "50"
+    },
+
+    {
+        "name": "Eye Drops",
+        "description": "Cures darkness.",
+        "price": "50"
+    },
+
+    {
+        "name": "Echo Grass",
+        "description": "Cures silence.",
+        "price": "50"
+    },
+
+    {
+        "name": "Gold Needle",
+        "description": "Cures stone.",
+        "price": "500"
+    },
+
+    {
+        "name": "Remedy",
+        "description": "Cures ailments except stone and KO.",
+        "price": "1500"
+    },
+
+    {
+        "name": "Sleeping Bag",
+        "description": "Partially restores the party's HP. Can only be used in the field.",
+        "price": "50"
+    },
+
+    {
+        "name": "Tent",
+        "description": "Partially restores the party's HP and MP. Can only be used in the field.",
+        "price": "160"
+    },
+
+    {
+        "name": "Cottage",
+        "description": "Fully restores the party's HP and MP. Can only be used in the field.",
+        "price": "2000"
+    }
+]

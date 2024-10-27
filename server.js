@@ -2,7 +2,9 @@
 // import { getAllItems, getAllMonsters } from "./utils/dbUtils.js";
 import express from "express";
 import * as path from "path";
-import monsterRouter from "./routes/monsters.js";
+import monsterRouter from "./routes/monsterRoute.js";
+import itemRouter from "./routes/itemRoute.js";
+import {getTables} from "./controllers/monsterController.js"
 
 const port = 7340;
 
@@ -17,9 +19,15 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/v1/monster", monsterRouter);
 
-app.get("/api/v1/item", (req, res) => {
-    getAllItems(res);
-});
+app.use("/api/v1/item", itemRouter);
+
+app.get("/api/v1/table", (req, res) => {
+    getTables((data) => {
+        res.status(200).json({
+            data: data,
+        });
+    }, (err) => {console.log(err.message)});
+})
 
 // Serves the whole app
 app.listen(port, () => {
