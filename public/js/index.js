@@ -1,14 +1,10 @@
 "using strict";
 
-// import e = require("express");
+import {createTableSection} from "./utils.js"
 
 const el = {
     tableBody: document.getElementById("table__body"),
     fetchBtn: document.getElementById("fetch-all"),
-    parent: document.getElementById("parent"),
-    c1: document.getElementById("childOne"),
-    c2: document.getElementById("childTwo"),
-    testBtn: document.getElementById("testBtn"),
     searchBar: document.getElementById("search-bar"),
 };
 
@@ -21,10 +17,11 @@ const fetchAllMonstersEvent = new CustomEvent("searchAllByName", {
     },
 });
 
+createTableSection("DEWJOJEFJo", ["id", "name", "hp"])
+
 const getTables = async () => {
     const response = await fetch("http://localhost:7340/api/v1/table");
     let tables = await response.json();
-    console.log(tables);
 
     const tableSelect = document.getElementById("table-select")
     let options = Array.from(tableSelect.children);
@@ -33,9 +30,6 @@ const getTables = async () => {
         tableOption.value = tables.data[index].name;
         tableOption.innerHTML = `${tables.data[index].name.slice(0, 1).toUpperCase()}${tables.data[index].name.slice(1)}`;
     })
-    // monsters.data.forEach((element) => {
-    //     createRow(element);
-    // });
 }
 
 getTables();
@@ -50,16 +44,14 @@ el.searchBar.addEventListener("input", (e) => {
 });
 
 el.searchBar.addEventListener("searchAllByName", (e) => {
-    console.log(searchTerm);
-    console.log(e.target);
+    // console.log(searchTerm);
+    // console.log(e.target);
 });
 
 el.tableBody.addEventListener("searchAllByName", (e) => {
-    console.log("table is hearing the event", searchTerm);
     el.tableBody.replaceChildren();
-    // make request
+
     getMonsterLike(searchTerm);
-    // make the rows based on response
 });
 
 // Testing defined events

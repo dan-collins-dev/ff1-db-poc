@@ -1,10 +1,9 @@
 "use strict";
-// import { getAllItems, getAllMonsters } from "./utils/dbUtils.js";
 import express from "express";
 import * as path from "path";
 import monsterRouter from "./routes/monsterRoute.js";
 import itemRouter from "./routes/itemRoute.js";
-import {getTables} from "./controllers/monsterController.js"
+import {getTables, getTableColumns} from "./controllers/monsterController.js"
 
 const port = 7340;
 
@@ -27,6 +26,16 @@ app.get("/api/v1/table", (req, res) => {
             data: data,
         });
     }, (err) => {console.log(err.message)});
+})
+
+app.get("/api/v1/columns", (req, res) => {
+    if (req.query.name) {
+        getTableColumns(req.query.name, (data) => {
+            res.status(200).json({
+                data: data
+            });
+        }, (err) => {console.log(err.message)})
+    }
 })
 
 // Serves the whole app

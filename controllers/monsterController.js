@@ -46,3 +46,14 @@ export const getTables = async (resolve, reject) => {
         reject(error);
     }
 };
+
+export const getTableColumns = async (tableName, resolve, reject) => {
+    try {
+        const statement = "SELECT * FROM PRAGMA_TABLE_INFO(?)"
+        const columnNames = db.prepare(statement).all(tableName);
+        resolve(columnNames)
+    } catch (error) {
+        console.log("Something went wrong getting table columns:", error.message)
+        reject(error);
+    }
+}
