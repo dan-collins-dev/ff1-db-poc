@@ -21,6 +21,25 @@ const fetchAllMonstersEvent = new CustomEvent("searchAllByName", {
     },
 });
 
+const getTables = async () => {
+    const response = await fetch("http://localhost:7340/api/v1/table");
+    let tables = await response.json();
+    console.log(tables);
+
+    const tableSelect = document.getElementById("table-select")
+    let options = Array.from(tableSelect.children);
+
+    options.forEach((tableOption, index) => {
+        tableOption.value = tables.data[index].name;
+        tableOption.innerHTML = `${tables.data[index].name.slice(0, 1).toUpperCase()}${tables.data[index].name.slice(1)}`;
+    })
+    // monsters.data.forEach((element) => {
+    //     createRow(element);
+    // });
+}
+
+getTables();
+
 el.searchBar.addEventListener("input", (e) => {
     if (e.data !== null) {
         searchTerm += e.data;
