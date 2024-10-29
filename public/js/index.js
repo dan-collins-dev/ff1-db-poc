@@ -3,9 +3,9 @@
 import {createTableSection} from "./utils.js"
 
 const el = {
-    tableBody: document.getElementById("table__body"),
     fetchBtn: document.getElementById("fetch-all"),
     searchBar: document.getElementById("search-bar"),
+    main: document.querySelector("main")
 };
 
 let searchTerm = "";
@@ -17,11 +17,47 @@ const fetchAllMonstersEvent = new CustomEvent("searchAllByName", {
     },
 });
 
-createTableSection("DEWJOJEFJo", ["id", "name", "hp"])
+const getTableColumns = async (tableName) => {
+    const response = await fetch(`http://localhost:7340/api/v1/columns?name=${tableName}`)
+    let columns = await response.json();
+    return columns;
+}
+
+createTableSection("DEWJOJEFJo", getTableColumns)
 
 const getTables = async () => {
     const response = await fetch("http://localhost:7340/api/v1/table");
     let tables = await response.json();
+    // let tables = [];
+    const columnNames = await getTableColumns("monster")
+    const itemColumns = await getTableColumns("item")
+    console.log(columnNames.data)
+    console.log(itemColumns.data)
+    console.log(tables.data)
+
+    // let combinedData = []
+
+    // tables.data.forEach(e => {
+    //     console.log(e)
+
+    // })
+
+    // console.log(combinedData)
+    // const itemRes = await getTableColumns("item");
+
+    // const pAll = Promise.all([response, itemRes])
+    
+    // const pResult = Promise.all([(await fetch("http://localhost:7340/api/v1/table")), getTableColumns("item")])
+    // // console.log("tables ", tables)
+    // console.log(pResult)
+    
+    // tables.forEach(t => {
+    //     console.log(t);
+    // })
+    // console.log(pAll);
+
+    // const items = await itemRes.json()
+    // items.forEach(i => console.log(i))
 
     const tableSelect = document.getElementById("table-select")
     let options = Array.from(tableSelect.children);
@@ -32,27 +68,28 @@ const getTables = async () => {
     })
 }
 
+// el.main.addEventListener("")
+
 getTables();
 
-el.searchBar.addEventListener("input", (e) => {
-    if (e.data !== null) {
-        searchTerm += e.data;
-    } else {
-        searchTerm = searchTerm.slice(0, searchTerm.length - 1);
-    }
-    el.tableBody.dispatchEvent(fetchAllMonstersEvent);
-});
+// el.searchBar.addEventListener("input", (e) => {
+//     if (e.data !== null) {
+//         searchTerm += e.data;
+//     } else {
+//         searchTerm = searchTerm.slice(0, searchTerm.length - 1);
+//     }
+//     el.tableBody.dispatchEvent(fetchAllMonstersEvent);
+// });
 
-el.searchBar.addEventListener("searchAllByName", (e) => {
-    // console.log(searchTerm);
-    // console.log(e.target);
-});
+// el.searchBar.addEventListener("searchAllByName", (e) => {
+//     // console.log(searchTerm);
+//     // console.log(e.target);
+// });
 
-el.tableBody.addEventListener("searchAllByName", (e) => {
-    el.tableBody.replaceChildren();
-
-    getMonsterLike(searchTerm);
-});
+// el.tableBody.addEventListener("searchAllByName", (e) => {
+//     el.tableBody.replaceChildren();
+//     getMonsterLike(searchTerm);
+// });
 
 // Testing defined events
 /* const btnClicked = new Event("talk", {
@@ -100,9 +137,9 @@ const getMonsterLike = async (term) => {
     }
 };
 
-el.fetchBtn.addEventListener("click", () => {
-    getAllMonsters();
-});
+// el.fetchBtn.addEventListener("click", () => {
+//     getAllMonsters();
+// });
 
 const createRow = (data) => {
     const {

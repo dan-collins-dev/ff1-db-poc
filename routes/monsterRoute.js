@@ -3,7 +3,7 @@ import express from "express";
 import {
     getAllMonsters,
     getMonsterById,
-    getMonsterLikeName
+    getMonsterLikeName,
 } from "../controllers/monsterController.js";
 const monsterRouter = express.Router();
 

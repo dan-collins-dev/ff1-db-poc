@@ -24,8 +24,11 @@ export const createTableSection = (tableName, columnNames) => {
     const main = document.querySelector("main");
     const section = document.createElement("section")
     const h2 = document.createElement("h2")
+    const input = document.createElement("input")
+    input.id = "search-bar";
     h2.innerHTML = tableName
     section.appendChild(h2)
+    section.appendChild(input)
     main.appendChild(section)
 
     const table = document.createElement("table");
@@ -36,10 +39,11 @@ export const createTableSection = (tableName, columnNames) => {
 
     const tr = document.createElement("tr")
     thead.appendChild(tr);
+    
 
-    columnNames.forEach(element => {
-        let th = document.createElement("th")
-        th.innerHTML = element
-        tr.appendChild(th)
-    });
+    // columnNames.forEach(element => {
+    //     let th = document.createElement("th")
+    //     th.innerHTML = element
+    //     tr.appendChild(th)
+    // });
 }
