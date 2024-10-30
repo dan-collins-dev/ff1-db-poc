@@ -22,13 +22,18 @@ monsterRouter.get("/", (req, res, next) => {
         );
     } else if (req.query.search) {
         // Get monsterLike
-        console.log(req.query)
-        getMonsterLikeName(req.query.search, 
+        console.log(req.query);
+        getMonsterLikeName(
+            req.query.search,
             (data) => {
-            res.status(200).json({
-                data: data
-            })
-        }, (err) => {next(err)})
+                res.status(200).json({
+                    data: data,
+                });
+            },
+            (err) => {
+                next(err);
+            }
+        );
     } else {
         getAllMonsters(
             (data) => {

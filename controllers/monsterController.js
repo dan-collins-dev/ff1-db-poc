@@ -33,28 +33,3 @@ export const getMonsterLikeName = async (term, resolve, reject) => {
         reject(error);
     }
 };
-
-export const getTables = async (resolve, reject) => {
-    try {
-        const q = "SELECT name FROM sqlite_master WHERE type='table'";
-        // const q = "PRAGMA table_info([monster])";
-        const tableNames = db.prepare(q).all();
-
-        resolve(tableNames);
-    } catch (error) {
-        reject(error);
-    }
-};
-
-export const getTableColumns = async (tableName, resolve, reject) => {
-    try {
-        const statement = "SELECT * FROM PRAGMA_TABLE_INFO(?)"
-        const columnNames = db.prepare(statement).all(tableName);
-        resolve(columnNames);
-
-    } catch (error) {
-        console.log("Something went wrong getting table columns. Error:", error.message)
-        reject(error)
-    }
-}
-

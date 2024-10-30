@@ -13,9 +13,7 @@ export const getAllItems = async (resolve, reject) => {
 
 export const getItemById = async (id, resolve, reject) => {
     try {
-        const item = db
-            .prepare("SELECT * FROM monster WHERE id = ?")
-            .get(id);
+        const item = db.prepare("SELECT * FROM monster WHERE id = ?").get(id);
         resolve(item);
     } catch (error) {
         reject(error);

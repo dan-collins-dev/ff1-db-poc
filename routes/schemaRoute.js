@@ -1,10 +1,10 @@
 "use strict";
 import express from "express";
-import { getAllItems } from "../controllers/itemController.js";
-const itemRouter = express.Router();
+import { getTables } from "../controllers/schemaController.js";
+const schemaRouter = express.Router();
 
-itemRouter.get("/", (req, res, next) => {
-    getAllItems(
+schemaRouter.get("/", (req, res, next) => {
+    getTables(
         (data) => {
             res.status(200).json({
                 data: data,
@@ -16,4 +16,4 @@ itemRouter.get("/", (req, res, next) => {
     );
 });
 
-export default itemRouter;
+export default schemaRouter;
