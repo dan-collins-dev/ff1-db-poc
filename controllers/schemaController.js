@@ -10,9 +10,9 @@ export const getTables = async (resolve, reject) => {
 
         tableNames.forEach((element, idx, arr) => {
             const statement = "SELECT * FROM PRAGMA_TABLE_INFO(?)";
-            const columnNames = db.prepare(statement).all(element["name"]);
+            const schema = db.prepare(statement).all(element["name"]);
 
-            let newObj = { ...element, columnNames };
+            let newObj = { ...element, schema };
             combinedData.push(newObj);
         });
 

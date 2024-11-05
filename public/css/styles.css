@@ -5,10 +5,12 @@
 
 th {
     background-color: slategrey;
+    padding: .5rem;
 }
 
 td {
     background-color: #3A3B43;
+    padding: .25rem;
 }
 
 tbody td {

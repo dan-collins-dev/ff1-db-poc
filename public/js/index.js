@@ -1,76 +1,40 @@
 "using strict";
+import { OnInputCallback } from "./eventHandlers.js";
+import { createTableSection, createLabelSelect } from "./elementFactory.js";
+import { fetchAllMonstersEvent, onTableSelectChange } from "./events.js";
 
-import {createTableSection} from "./utils.js"
 
 const el = {
-    fetchBtn: document.getElementById("fetch-all"),
-    searchBar: document.getElementById("search-bar"),
-    main: document.querySelector("main")
+    main: document.querySelector("main"),
+    header: document.querySelector("header"),
+    querySect: document.getElementById("query-section"),
+    body: document.querySelector("body"),
+    // btn: document.querySelector("button")
 };
 
-let searchTerm = "";
-
-const fetchAllMonstersEvent = new CustomEvent("searchAllByName", {
-    bubbles: true,
-    detail: {
-        term: "",
-    },
+// Drop down value changes and the existing section is removed
+el.body.addEventListener("tabledChanged", (e) => {
+    el.main.replaceChildren();
+    createTableSection(e.target.value)
 });
 
-const getTableColumns = async (tableName) => {
-    const response = await fetch(`http://localhost:7340/api/v1/columns?name=${tableName}`)
-    let columns = await response.json();
-    return columns;
-}
-
-createTableSection("DEWJOJEFJo", getTableColumns)
-
 const getTables = async () => {
-    const response = await fetch("http://localhost:7340/api/v1/table");
+    const response = await fetch("http://localhost:7340/api/v1/schema");
     let tables = await response.json();
-    // let tables = [];
-    const columnNames = await getTableColumns("monster")
-    const itemColumns = await getTableColumns("item")
-    console.log(columnNames.data)
-    console.log(itemColumns.data)
-    console.log(tables.data)
 
-    // let combinedData = []
+    console.log(tables.data);
+    console.log(tables.data[1].columnNames);
 
-    // tables.data.forEach(e => {
-    //     console.log(e)
-
-    // })
-
-    // console.log(combinedData)
-    // const itemRes = await getTableColumns("item");
-
-    // const pAll = Promise.all([response, itemRes])
-    
-    // const pResult = Promise.all([(await fetch("http://localhost:7340/api/v1/table")), getTableColumns("item")])
-    // // console.log("tables ", tables)
-    // console.log(pResult)
-    
-    // tables.forEach(t => {
-    //     console.log(t);
-    // })
-    // console.log(pAll);
-
-    // const items = await itemRes.json()
-    // items.forEach(i => console.log(i))
-
-    const tableSelect = document.getElementById("table-select")
+    const tableSelect = document.getElementById("table-select");
     let options = Array.from(tableSelect.children);
 
     options.forEach((tableOption, index) => {
         tableOption.value = tables.data[index].name;
-        tableOption.innerHTML = `${tables.data[index].name.slice(0, 1).toUpperCase()}${tables.data[index].name.slice(1)}`;
-    })
-}
-
-// el.main.addEventListener("")
-
-getTables();
+        tableOption.innerHTML = `${tables.data[index].name
+            .slice(0, 1)
+            .toUpperCase()}${tables.data[index].name.slice(1)}`;
+    });
+};
 
 // el.searchBar.addEventListener("input", (e) => {
 //     if (e.data !== null) {
@@ -79,11 +43,6 @@ getTables();
 //         searchTerm = searchTerm.slice(0, searchTerm.length - 1);
 //     }
 //     el.tableBody.dispatchEvent(fetchAllMonstersEvent);
-// });
-
-// el.searchBar.addEventListener("searchAllByName", (e) => {
-//     // console.log(searchTerm);
-//     // console.log(e.target);
 // });
 
 // el.tableBody.addEventListener("searchAllByName", (e) => {
@@ -124,53 +83,23 @@ const getAllMonsters = async () => {
     });
 };
 
-const getMonsterLike = async (term) => {
-    if (term !== "") {
-        const response = await fetch(
-            `http://localhost:7340/api/v1/monster?search=${term}`
-        );
-        let monsters = await response.json();
-        console.log("MONSTERS", monsters);
-        monsters.data.forEach((element) => {
-            createRow(element);
-        });
-    }
-};
+// const getMonsterLike = async (term) => {
+//     if (term !== "") {
+//         const response = await fetch(
+//             `http://localhost:7340/api/v1/monster?search=${term}`
+//         );
+//         let monsters = await response.json();
+//         console.log("MONSTERS", monsters);
+//         monsters.data.forEach((element) => {
+//             createRow(element);
+//         });
+//     }
+// };
 
 // el.fetchBtn.addEventListener("click", () => {
 //     getAllMonsters();
 // });
 
-const createRow = (data) => {
-    const {
-        id,
-        name,
-        hp,
-        attack,
-        defense,
-        accuracy,
-        agility,
-        intellect,
-        evasion,
-        magic_defense,
-        gil_drop,
-        exp_drop,
-    } = data;
-    const htmlString = `
-    <tr>
-        <th>${id}</th>
-        <td>${name}</td>
-        <td>${hp.toLocaleString("en-US")}</td>
-        <td>${attack}</td>
-        <td>${defense}</td>
-        <td>${accuracy}</td>
-        <td>${agility}</td>
-        <td>${intellect}</td>
-        <td>${evasion}</td>
-        <td>${magic_defense}</td>
-        <td>${gil_drop.toLocaleString("en-US")}</td>
-        <td>${exp_drop.toLocaleString("en-US")}</td>
-    </tr>
-    `;
-    el.tableBody.innerHTML += htmlString;
-};
+
+// Create label and select
+createLabelSelect()
